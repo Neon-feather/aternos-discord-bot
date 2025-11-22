@@ -48,7 +48,7 @@ var commands = []*discordgo.ApplicationCommand{
 	{
 		Name:                     StartCommand,
 		Description:              "Start the minecraft server",
-		DefaultMemberPermissions: &adminPermissions,
+		DefaultMemberPermissions: &userPermissions, //changed from adminPermissions
 		DMPermission:             &dmPermission,
 	},
 	{
